@@ -1,0 +1,24 @@
+{
+  "name": "bun-elysia-api",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "dev": "bun run --watch src/index.ts",
+    "prisma:mg": "prisma migrate dev --name init",
+    "prisma:g": "prisma generate"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "prisma": "5.6.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "0.7.2",
+    "@grotto/logysia": "0.0.5",
+    "@prisma/client": "5.6.0",
+    "elysia": "0.7.29"
+  }
+}

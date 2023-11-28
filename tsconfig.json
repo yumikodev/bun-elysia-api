@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "lib": ["ESNext"],
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "noUnusedLocals": false,
+    "composite": true,
+    "strict": true,
+    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "useUnknownInCatchVariables": false,
+    "allowJs": true,
+    "types": [
+      "bun-types" // add Bun global
+    ],
+    "baseUrl": "./src",
+    "paths": {
+      "@Routes/*": ["routes/*"],
+      "@Services/*": ["services/*"],
+      "@Schemas/*": ["schemas/*"]
+    }
+  }
+}
