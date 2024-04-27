@@ -21,9 +21,7 @@
     ],
     "baseUrl": "./src",
     "paths": {
-      "@Routes/*": ["routes/*"],
-      "@Services/*": ["services/*"],
-      "@Schemas/*": ["schemas/*"]
+      "@Modules/*": ["modules/*"]
     }
   }
 }

@@ -1,6 +1,6 @@
 import { Elysia } from "elysia";
 import { NotesController } from "./notes.controller";
-import { noteCreateSchema, noteUpdateSchema } from "@Schemas/notes.schema";
+import { noteCreateBody, noteUpdateBody } from "./schemas/notes.schema";
 
 const controller = new NotesController();
 
@@ -10,9 +10,9 @@ export default new Elysia({
   .get("/", controller.getAll)
   .get("/:id", controller.getById)
   .post("/", controller.create, {
-    body: noteCreateSchema,
+    body: noteCreateBody,
   })
   .put("/:id", controller.update, {
-    body: noteUpdateSchema,
+    body: noteUpdateBody,
   })
   .delete("/:id", controller.delete);

@@ -1,4 +1,4 @@
-import { prisma } from "@Services/db";
+import { prisma } from "@Modules/db";
 
 export class NotesService {
   getAllNotes() {

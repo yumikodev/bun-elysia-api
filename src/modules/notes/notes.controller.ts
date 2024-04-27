@@ -1,4 +1,4 @@
-import { NotesService } from "@Services/db/notes.service";
+import { NotesService } from "./notes.service";
 import { Context } from "elysia";
 
 const service = new NotesService();
